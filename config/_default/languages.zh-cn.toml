@@ -16,10 +16,10 @@ title = "黑蚊子的门"
  [params.author]
    name = "黑蚊子多"
    email = "3511457481@qq.com"
-   image = "https://BURIBURI-ZAEMON1.github.io/img/avatar.jpg"
+   image = "images/avatar.jpg"
 #   imageQuality = 96
    headline = "我不是蚊子QAQ"
-   bio = "A little bit about you"
+   bio = "什么都不会的后端萌新QAQ"
    links = [
      { email = "3511457481@qq.com" },
 #     { link = "https://link-to-some-website.com/" },
