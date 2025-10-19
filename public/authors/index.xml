@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on 黑蚊子的门</title>
+    <link>http://localhost:1313/authors/</link>
+    <description>Recent content in Authors on 黑蚊子的门</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>3511457481@qq.com (黑蚊子多)</managingEditor>
+    <webMaster>3511457481@qq.com (黑蚊子多)</webMaster>
+    <copyright>© 黑蚊子的门</copyright>
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>
