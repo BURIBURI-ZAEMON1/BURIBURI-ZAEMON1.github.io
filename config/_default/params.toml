@@ -64,7 +64,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showDate = true
   showViews = true
   showLikes = true
-  showDateOnlyInArticle = false
+  showDateOnlyInArticle = true
   showDateUpdated = true
   showAuthor = true
   # showAuthorBottom = false
@@ -117,19 +117,19 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showHero = false
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
-  showLikes = false
-  showTableOfContents = false
+  showViews = true
+  showLikes = true
+  showTableOfContents = true
   cardView = false
 
 [term]
   showHero = true
   heroStyle = "big" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showTableOfContents = true
-  groupByYear = false
+  groupByYear = true
   cardView = false
   cardViewScreenWidth = false
 
