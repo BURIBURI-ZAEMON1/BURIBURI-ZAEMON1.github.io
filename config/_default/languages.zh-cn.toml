@@ -8,10 +8,10 @@ title = "黑蚊子的门"
   displayName = "ZH-CN"
   isoCode = "zh-cn"
   rtl = false
-  dateFormat = "20 October 2025"
-  logo = "images/logo.jpg"
+  dateFormat = "2006-01-02"
+  logo = "images/logo1.jpg"
   # secondaryLogo = "img/secondary-logo.png"
-  copyright = "{year}© 黑蚊子的门"
+  copyright = "2025 © 黑蚊子的门"
 
  [params.author]
    name = "黑蚊子多"
