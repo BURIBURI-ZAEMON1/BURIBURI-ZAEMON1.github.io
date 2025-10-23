@@ -8,7 +8,7 @@
     <language>zh-cn</language>
     <managingEditor>3511457481@qq.com (黑蚊子多)</managingEditor>
     <webMaster>3511457481@qq.com (黑蚊子多)</webMaster>
-    <copyright>© 黑蚊子的门</copyright>
+    <copyright>{year}© 黑蚊子的门</copyright>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
