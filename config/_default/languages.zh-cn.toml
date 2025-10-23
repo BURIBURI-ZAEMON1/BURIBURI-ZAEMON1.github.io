@@ -8,20 +8,20 @@ title = "黑蚊子的门"
   displayName = "ZH-CN"
   isoCode = "zh-cn"
   rtl = false
-  dateFormat = "2025-10-20"
-  # logo = "img/logo.png"
+  dateFormat = "20 October 2025"
+  logo = "images/logo.jpg"
   # secondaryLogo = "img/secondary-logo.png"
-  copyright = "© 黑蚊子的门"
+  copyright = "{year}© 黑蚊子的门"
 
  [params.author]
    name = "黑蚊子多"
    email = "3511457481@qq.com"
    image = "images/avatar.jpg"
-#   imageQuality = 96
-   headline = "我不是蚊子QAQ"
+   imageQuality = 96
+   headline = "真不是蚊子QAQ"
    bio = "什么都不会的后端萌新QAQ"
    links = [
-     { email = "3511457481@qq.com" },
+    { email = "mailto:3511457481@qq.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
