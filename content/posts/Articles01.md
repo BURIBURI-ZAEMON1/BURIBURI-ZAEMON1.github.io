@@ -3,11 +3,10 @@ date = '2025-10-19T13:59:13+08:00'
 draft = false
 title = '如何运用Hugo搭建自己的博客网站'
 
-categories: ["教程"]
-tags: ["Hugo""入门"]
-series: ["博客"]
-series_order: 1
-
+categories = ["教程"]
+tags = ["Hugo", "入门"]
+series = ["博客"]
+series_order = 1
 +++
 
 此篇用于记录自己构建此博客的过程以及给同样想用Hugo来搭建自己博客的朋友们一些指引
