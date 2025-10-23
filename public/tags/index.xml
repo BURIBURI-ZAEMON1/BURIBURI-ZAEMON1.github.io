@@ -8,8 +8,28 @@
     <language>zh-cn</language>
     <managingEditor>3511457481@qq.com (黑蚊子多)</managingEditor>
     <webMaster>3511457481@qq.com (黑蚊子多)</webMaster>
-    <copyright>{year}© 黑蚊子的门</copyright>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>2025 © 黑蚊子的门</copyright>
+    <lastBuildDate>Sun, 19 Oct 2025 13:59:13 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tags/hugo/</link>
+      <pubDate>Sun, 19 Oct 2025 13:59:13 +0800</pubDate>
+      <author>3511457481@qq.com (黑蚊子多)</author>
+      <guid>http://localhost:1313/tags/hugo/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>入门</title>
+      <link>http://localhost:1313/tags/%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sun, 19 Oct 2025 13:59:13 +0800</pubDate>
+      <author>3511457481@qq.com (黑蚊子多)</author>
+      <guid>http://localhost:1313/tags/%E5%85%A5%E9%97%A8/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>
