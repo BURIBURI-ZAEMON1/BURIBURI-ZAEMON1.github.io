@@ -62,8 +62,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [article]
   showDate = true
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showDateOnlyInArticle = true
   showDateUpdated = true
   showAuthor = true
@@ -99,8 +99,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showSummary = false
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showTableOfContents = false
   showCards = true
   orderByWeight = false
@@ -117,30 +117,30 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showTableOfContents = true
   cardView = false
 
 [term]
   showHero = true
-  heroStyle = "big" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showTableOfContents = true
   groupByYear = true
   cardView = false
   cardViewScreenWidth = false
 
 [firebase]
-  # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
-  # projectId = "XXXXXX"
-  # storageBucket = "XXXXXX"
-  # messagingSenderId = "XXXXXX"
-  # appId = "XXXXXX"
-  # measurementId = "XXXXXX"
+ apiKey = "AIzaSyBb7tMAZk4-Iw7xOty9tWM697055IH9ivc"
+ authDomain = "myblog-5fc39.firebaseapp.com"
+ projectId = "myblog-5fc39"
+ storageBucket = "myblog-5fc39.firebasestorage.app"
+ messagingSenderId = "191648389729"
+ appId = "1:191648389729:web:8b1c2be558e8f2a5142820"
+ measurementId = "G-19H2LJSR68"
 
 [fathomAnalytics]
   # site = "ABC12345"
