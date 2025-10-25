@@ -1,4 +1,30 @@
-name:朱佩奇
-url:https://wjsblog.xyz
-avatar:/images/wjs.png
-desc:前端bro
+- name: "朱佩奇"
+  url: "https://wjsblog.xyz"
+  logo: "/img/friends/wjs.png"
+  desc: "前端bro"
+
+- name: "折乙"
+  url: "https://zheyi.in"
+  logo: "/img/friends/zheyi.jpg"
+  desc: "前端部长大人"
+
+- name: "白糖洒一地"
+  url: "https://blog.sugarmgp.cn"
+  logo: "/img/friends/baitang.jpg"
+  desc: "后端部长大人"
+
+- name: "完了啊😦"
+  url: "https://ysss-ee.xyz" 
+  logo: "/img/friends/ksh.jpg"
+  desc: "原来是天才来着"
+
+- name: "青鸟"
+  url: "https://blog.bluebird.icu"
+  logo: "/img/friends/qingniao.jpg"
+  desc: "字节大手子学长"
+  
+- name: "惜寞"
+  url: "https://lonesome.cn"
+  logo: "/img/friends/ximo.jpg"
+  desc: "雷火大手子学长"
+

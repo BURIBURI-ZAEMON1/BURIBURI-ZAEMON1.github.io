@@ -221,6 +221,29 @@
 
   
   
+    
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+      <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBb7tMAZk4-Iw7xOty9tWM697055IH9ivc",
+      authDomain: "myblog-5fc39.firebaseapp.com",
+      projectId: "myblog-5fc39",
+      storageBucket: "myblog-5fc39.firebasestorage.app",
+      messagingSenderId: "191648389729",
+      appId: "1:191648389729:web:8b1c2be558e8f2a5142820",
+      measurementId: "G-19H2LJSR68"
+    };
+
+        var app = firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+        var auth = firebase.auth();
+
+      </script>
+    
+  
 
   
   
@@ -357,15 +380,15 @@
       
         
   <a
-  href=""
+  href="/friends/"
   
   class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-  aria-label="Parent"
-  title="">
+  aria-label="Friends"
+  title="友链">
   
   
     <p class="text-base font-medium">
-      Parent
+      Friends
     </p>
   
 </a>
@@ -753,15 +776,15 @@
               
   <li class="mt-1">
   <a
-    href=""
+    href="/friends/"
     
     class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-    aria-label="Parent"
-    title="">
+    aria-label="Friends"
+    title="友链">
     
     
       <p class="text-bg font-bg">
-        Parent
+        Friends
       </p>
     
   </a>

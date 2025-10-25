@@ -1,17 +1,75 @@
 {{ define "main" }}
-<article class="prose lg:prose-xl mx-auto">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+{{/* ① 独立背景图：assets/images/friendsback.webp */}}
+{{ with resources.Get "images/friendsback.webp" }}
+<style>
+  /* ① 圆角背景 + 轻微毛玻璃悬浮感 */
+  .friends-bg {
+    position: relative;
+    border-radius: 24px;                   /* 圆角视觉 */
+    overflow: hidden;                      /* 裁掉圆角外溢出 */
+    background-image: url('{{ .RelPermalink }}');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18);  /* 悬浮阴影 */
+    backdrop-filter: blur(2px);            /* 轻微毛玻璃 */
+    -webkit-backdrop-filter: blur(2px);
+  }
+  html[data-theme="dark"] .friends-bg {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+  }
 
-  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
-    {{ range .Site.Data.friends }}
-    <a href="{{ .url }}" target="_blank" rel="noopener"
-       class="block p-4 border rounded-lg hover:shadow-lg transition-shadow">
-      <img src="{{ .logo }}" alt="{{ .name }}" class="w-16 h-16 rounded-full mx-auto mb-3">
-      <h3 class="text-center text-lg font-semibold">{{ .name }}</h3>
-      <p class="text-center text-sm text-gray-600">{{ .desc }}</p>
-    </a>
+  /* ② 圆角卡片 + 悬浮 */
+  .friend-card {
+    border-radius: 16px;
+    background: var(--base-100);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .friend-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+  html[data-theme="dark"] .friend-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.30);
+  }
+
+  /* ③ 头像：72px + 模糊相框（圆角视觉） */
+  .friend-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 8px 2px rgba(255,255,255,0.25);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+  }
+  html[data-theme="dark"] .friend-avatar {
+    box-shadow: 0 0 8px 2px rgba(255,255,255,0.15);
+  }
+</style>
+{{ end }}
+
+<!-- ③ 内容区：与文章页同风格 -->
+<section class="section container grid-lg py-12 friends-bg">
+  <div class="bg-base-100/80 dark:bg-base-200/80 rounded-2xl p-8 shadow-xl">
+    {{ with .Site.Data.friends }}
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {{ range shuffle . }}
+      <a href="{{ .url }}" target="_blank" rel="noopener"
+         class="flex flex-col items-center p-6 rounded-xl bg-base-100 dark:bg-base-300 hover:shadow-lg hover:scale-105 transition-all duration-300 friend-card">
+        <img src="{{ .logo }}" alt="{{ .name }}" loading="lazy"
+             class="friend-avatar mb-4 ring-2 ring-base-300 dark:ring-base-200">
+        <h3 class="font-bold text-base-content text-center">{{ .name }}</h3>
+        <p class="text-sm text-base-content/70 text-center mt-2">{{ .desc }}</p>
+        <span class="i-heroicons-arrow-top-right-on-square text-base-content/50 mt-3"></span>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div class="text-center text-base-content/60 py-10">
+      <p>暂无友链，欢迎 <a href="/contact" class="link link-primary">联系我</a> 交换！</p>
+    </div>
     {{ end }}
   </div>
-</article>
+</section>
+<!-- 友链页结束 -->
 {{ end }}
